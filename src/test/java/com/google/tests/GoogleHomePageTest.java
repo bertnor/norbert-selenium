@@ -15,13 +15,14 @@ import org.testng.annotations.Test;
 public class GoogleHomePageTest {
 	
 	private WebDriver driver; 
-	private WebDriverWait wait = new WebDriverWait(driver, 5);
+	private WebDriverWait wait;
 	String appURL = "http://google.com";
 
 	@BeforeClass
 	public void testSetUp() {
 		System.setProperty("webdriver.chrome.driver", "C:/soft/drivers/chromedriver.exe");
 		driver = new ChromeDriver();
+	    wait = new WebDriverWait(driver, 5);
 	}
 	
 	@Test
