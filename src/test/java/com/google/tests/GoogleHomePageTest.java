@@ -16,6 +16,10 @@ public class GoogleHomePageTest {
 	public void testSetUp() {
 		System.setProperty("webdriver.chrome.driver", "C:/soft/drivers/chromedriver.exe");
 		driver = new ChromeDriver();
+		driver = new ChromeDriver();
+		driver = new ChromeDriver();
+		driver = new ChromeDriver();
+		driver = new ChromeDriver();
 	}
 	
 	@Test

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="35684" started-at="2018-12-25T14:20:40Z" finished-at="2018-12-25T14:21:16Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="35684" started-at="2018-12-25T14:20:40Z" finished-at="2018-12-25T14:21:16Z">
+      <class name="com.google.tests.GoogleHomePageTest">
+        <test-method status="PASS" signature="testSetUp()[pri:0, instance:com.google.tests.GoogleHomePageTest@3532ec19]" name="testSetUp" is-config="true" duration-ms="3793" started-at="2018-12-25T14:20:40Z" finished-at="2018-12-25T14:20:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSetUp -->
+        <test-method status="PASS" signature="verifyGooglePageTittle()[pri:0, instance:com.google.tests.GoogleHomePageTest@3532ec19]" name="verifyGooglePageTittle" duration-ms="31169" started-at="2018-12-25T14:20:44Z" finished-at="2018-12-25T14:21:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyGooglePageTittle -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.google.tests.GoogleHomePageTest@3532ec19]" name="tearDown" is-config="true" duration-ms="697" started-at="2018-12-25T14:21:15Z" finished-at="2018-12-25T14:21:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.google.tests.GoogleHomePageTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
