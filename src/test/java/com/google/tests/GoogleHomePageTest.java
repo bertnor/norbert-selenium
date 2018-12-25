@@ -32,6 +32,16 @@ public class GoogleHomePageTest {
 		Assert.assertEquals(getTitle, "Google");
 		driver.findElement(By.name("q")).sendKeys("unia tarnow");
 		driver.findElement(By.name("btnK")).click();
+		try {
+			Thread.sleep(2000);
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+		try {
+			Thread.sleep(2000);
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
 		Assert.assertTrue(driver.getPageSource().contains("unia"), "Unia is on results");
 		try {
 			Thread.sleep(2000);
