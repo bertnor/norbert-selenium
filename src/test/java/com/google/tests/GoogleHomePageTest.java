@@ -1,5 +1,6 @@
 package com.google.tests;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
@@ -16,23 +17,27 @@ public class GoogleHomePageTest {
 	public void testSetUp() {
 		System.setProperty("webdriver.chrome.driver", "C:/soft/drivers/chromedriver.exe");
 		driver = new ChromeDriver();
-		driver = new ChromeDriver();
-		driver = new ChromeDriver();
-		driver = new ChromeDriver();
-		driver = new ChromeDriver();
 	}
 	
 	@Test
 	public void verifyGooglePageTittle() {
 		System.out.println("siema");
 		try {
-			Thread.sleep(30000);
+			Thread.sleep(2000);
 		} catch (Exception e) {
 			// TODO: handle exception
 		}
 		driver.navigate().to(appURL);
 		String getTitle = driver.getTitle();
 		Assert.assertEquals(getTitle, "Google");
+		driver.findElement(By.name("q")).sendKeys("unia tarnow");
+		driver.findElement(By.name("btnK")).click();
+		Assert.assertTrue(driver.getPageSource().contains("unia"), "Unia is on results");
+		try {
+			Thread.sleep(2000);
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
 	}
 	
 	@AfterClass
