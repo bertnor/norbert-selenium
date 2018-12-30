@@ -3,13 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.google.tests.GoogleHomePageTest">
+      <class name="com.pom.wordpress.Testcases.VerifyWordpressLoginTest">
         <methods>
-          <include name="testSetUp"/>
-          <include name="tearDown"/>
-          <include name="verifyGooglePageTittle"/>
+          <include name="verifyValidLogin"/>
         </methods>
-      </class> <!-- com.google.tests.GoogleHomePageTest -->
+      </class> <!-- com.pom.wordpress.Testcases.VerifyWordpressLoginTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

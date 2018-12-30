@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="16.358" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="0.567" tests="6" errors="0" skipped="5" failures="1">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_191\jre\bin"/>
@@ -64,5 +64,24 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="verifyGooglePageTittle" classname="com.google.tests.GoogleHomePageTest" time="12.475"/>
+  <testcase name="beforeTest" classname="com.google.tests.GoogleHomePageTest" time="0.314">
+    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
+	at com.google.tests.GoogleHomePageTest.beforeTest(GoogleHomePageTest.java:34)
+</failure>
+  </testcase>
+  <testcase name="testSetUp" classname="com.google.tests.GoogleHomePageTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyGooglePageTittle" classname="com.google.tests.GoogleHomePageTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyGooglePageTittle1" classname="com.google.tests.GoogleHomePageTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyGooglePageTittle2" classname="com.google.tests.GoogleHomePageTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="afterTest" classname="com.google.tests.GoogleHomePageTest" time="0">
+    <skipped/>
+  </testcase>
 </testsuite>
